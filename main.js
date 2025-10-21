@@ -106,13 +106,13 @@ function mostraAlternativas() {
 }
 
 
-function respostaSelecionada (opcaoSelecionada){
+function respostaSelecionada(opcaoSelecionada) {
     afirmacoes = opcaoSelecionada.afirmacao;
     historiaFinal += afirmacoes + " ";
-    atual ++;
+    atual++;
     mostraPergunta();
 }
-function mostraResultado(){
+function mostraResultado() {
     caixaPerguntas.textContent = "Se Fosse Possível...";
     textoResultado.textContent = historiaFinal;
     caixaAlternativas.textContent = " ";
