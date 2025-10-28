@@ -4,10 +4,6 @@ const caixaAlternativas = document.querySelector(".caixa-alternativas");
 const caixaResultado = document.querySelector(".caixa-resultado");
 const textoResultado = document.querySelector(".texto-resultado");
 
-
-
-
-
 const perguntas = [
     {
         enunciado: " Ao ser convidado para uma festa, qual é a reação comum? ",
@@ -93,7 +89,6 @@ function mostraPergunta() {
     mostraAlternativas();
 }
 
-
 function mostraAlternativas() {
     for (const alternativa of perguntaAtual.alternativas) {
         const botaoAlternativas = document.createElement("button");
@@ -103,22 +98,17 @@ function mostraAlternativas() {
     }
 }
 
-
 function respostaSelecionada(opcaoSelecionada) {
     afirmacoes = opcaoSelecionada.afirmacao;
     historiaFinal += afirmacoes + " ";
     atual++;
     mostraPergunta();
 }
+
 function mostraResultado() {
     caixaPerguntas.textContent = "Observando sua essência...";
     textoResultado.textContent = historiaFinal;
     caixaAlternativas.textContent = " ";
 }
-
-
-
-
-
 
 mostraPergunta();
