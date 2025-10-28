@@ -111,7 +111,7 @@ function respostaSelecionada(opcaoSelecionada) {
     mostraPergunta();
 }
 function mostraResultado() {
-    caixaPerguntas.textContent = "Se Fosse Possível...";
+    caixaPerguntas.textContent = "Observando sua essência...";
     textoResultado.textContent = historiaFinal;
     caixaAlternativas.textContent = " ";
 }
